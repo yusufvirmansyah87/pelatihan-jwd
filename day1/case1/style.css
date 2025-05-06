@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+nav {
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+    nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+        
+    }
+    nav ul li {
+        list-style: none;
+ 
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    } 
+    nav ul li a:hover {
+        font-size: 13pt;
+        font-weight: bold;
+    }     
+
+
+.hero .container {
+display: flex;
+align-items: center; /*untuk ngatur posisi konten secara vertikal*/
+justify-content: end;/*untuk ngatur posisi konten secara horizontal*/
+}
+    .hero-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center; /*untuk ngatur posisi konten secara vertikal*/
+    }
+
+    .hero-deskripsi {
+        padding: 10px;
+        align-self: center;
+    }
+
+    .hero-deskripsi h1 {
+        color: chocolate;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 10px;
+        font-size: 48px;
+    }
+
+    .hero-deskripsi .beda {
+        color: brown;
+    }
+
+    .hero-deskripsi p {
+        text-align: justify;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    .hero-mainlogo {
+        align-self: center;
+    }
+
+.menu-makanan .container {
+    display: flex;
+    align-items: center; /*untuk ngatur posisi konten secara vertikal*/
+    justify-content: end;/*untuk ngatur posisi konten secara horizontal*/
+    }
+
+    .menu {
+        border:1px solid red;
+        width :250px;
+        height: 250px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+
+footer {
+    padding:10px;
+    text-align: center;
+    box-shadow: 0 -5px 5px 0 #ccc;
+}
+
+@media (max-width: 768px) { /* ini untuk mengatur tampilan ke dimensi device dibawah 767*/
+    nav .container ul {
+        flex-direction: column;
+
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+
+    }
+}
