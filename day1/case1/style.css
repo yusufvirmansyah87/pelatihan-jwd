@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     text-decoration: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,26 +83,37 @@ justify-content: end;/*untuk ngatur posisi konten secara horizontal*/
         align-self: center;
     }
 
-.menu-makanan .container {
+.paket .container {
     display: flex;
     align-items: center; /*untuk ngatur posisi konten secara vertikal*/
     justify-content: end;/*untuk ngatur posisi konten secara horizontal*/
     }
 
-    .menu {
-        border:1px solid red;
-        width :250px;
-        height: 250px;
-        border-radius: 5px;
-        padding: 5px;
+    .paket-wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center; /*untuk ngatur posisi konten secara vertikal*/
+        padding : 5px;
+    }
+
+    .paket-wrapper .card {
+        position: relative;
     }
 
 
+    .paket-wrapper .test { 
+        display: flex;
+        justify-content: center;
+    }
+     .paket-wrapper .foto-paket {
+        width:100%;
+     }
 
 footer {
     padding:10px;
     text-align: center;
     box-shadow: 0 -5px 5px 0 #ccc;
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) { /* ini untuk mengatur tampilan ke dimensi device dibawah 767*/
